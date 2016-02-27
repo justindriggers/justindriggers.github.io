@@ -170,7 +170,7 @@ $().ready(function() {
   function sendMessage(formData) {
     $.ajax({
         type: "POST",
-        url: "email.php",
+        url: "http://mail.justindriggers.com/send",
         data: formData,
         success : function(text){
           $("#contact-form .alert").fadeOut();
